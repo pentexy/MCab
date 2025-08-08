@@ -30,6 +30,7 @@ const bot = mineflayer.createBot({
     username: botName,
     host: hostName,
     port: hostPort,
+    version: "1.21", // ✅ Specify correct Minecraft version here
     viewDistance: "tiny",
 });
 
