@@ -8,9 +8,7 @@ const armorPlugin = require('./armor.js');
 
 if (process.argv.length < 5) process.exit();
 
-const botName = "§bTʜᴇKɴɪɢʜᴛ §c[ 𝘽𝙀𝙏𝘼 ]"; // change this to your desired bot name
-const hostName = "54.151.198.24";
-const hostPort = 25565;
+const [botName, hostName, hostPort] = process.argv.slice(2);
 
 const LINE_BREAKS = /\r?\n/g;
 const HUNGER_LIMIT = 5;
@@ -30,7 +28,6 @@ const bot = mineflayer.createBot({
     username: botName,
     host: hostName,
     port: hostPort,
-    version: "1.21", // ✅ Specify correct Minecraft version here
     viewDistance: "tiny",
 });
 
