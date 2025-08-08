@@ -7,7 +7,7 @@ const hostPort = 12345;
 const bots = [];
 const botsByName = {};
 
-const autoSpawnBots = 1;
+const autoSpawnBots = 7;
 const spawnDelay = 5000;
 
 const reader = readline.createInterface({
@@ -34,7 +34,7 @@ function spawnBot(botName) {
 
 async function spawnBots(amount=1) {
 	for (let i = 0; i < amount; i++) {
-		spawnBot(`guard_${bots.length}`);
+		spawnBot(`TheKnights_${bots.length}`);
 
 		await sleep(spawnDelay);
 	}
