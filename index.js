@@ -1,8 +1,8 @@
 const { fork } = require('child_process');
 const readline = require("readline");
 
-const hostName = "localhost";
-const hostPort = 12345;
+const hostName = "54.151.198.24";
+const hostPort = 25565;
 
 const bots = [];
 const botsByName = {};
